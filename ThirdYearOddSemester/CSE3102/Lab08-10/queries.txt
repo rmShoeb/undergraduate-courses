@@ -1,0 +1,191 @@
+Create student table:
+CREATE TABLE student(
+    stud_no VARCHAR(8) NOT NULL PRIMARY KEY,
+    stude_name VARCHAR(45) NOT NULL
+    )DEFAULT CHARACTER SET utf8;
+
+ Trigger on student table:
+DROP TRIGGER IF EXISTS before_student_insert;
+
+DELIMITER $$
+CREATE TRIGGER before_student_insert
+	BEFORE INSERT ON student
+    FOR EACH ROW
+BEGIN
+    IF(NEW.stud_no NOT LIKE 'C%')
+    	THEN
+        	SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT = 'Student no must start with C';
+    END IF;
+END;
+$$
+DELIMITER ;
+
+Inputs:
+INSERT INTO student
+VALUES("C1603013", "Riyad Morshed Shoeb"),
+      ("C1603012", "Mrinmoy Mondal"),
+      ("C1603001", "Shegufa Rob"),
+      ("C1603002", "Nasif Raihan"),
+      ("C1603003", "Hasib"),
+      ("C1603004", "Muntahir Akon"),
+      ("C1603006", "Rakibul Hasan"),
+      ("C1603007", "Yamin Hoque"),
+      ("C1603008", "Md Al Siam"),
+      ("C1603009", "Mustafizur Rahman"),
+      ("C1603011", "Fatin Faiaz Isty"),
+      ("C1603015", "Nahid Sadik"),
+      ("C1603016", "Mridul Sayed"),
+      ("C1603017", "Nur Afroz"),
+      ("C1603018", "Azmal Awasaf");
+
+
+Create membership table:
+CREATE TABLE membership(
+    mem_no VARCHAR(15) NOT NULL PRIMARY KEY,
+    stud_no VARCHAR(8) NOT NULL,
+    FOREIGN KEY (stud_no) REFERENCES student(stud_no)
+    )DEFAULT CHARACTER SET utf8;
+
+inputs:
+INSERT INTO membership
+VALUES("M01", "C1603001"),
+	  ("M02", "C1603002"),
+      ("M03", "C1603003"),
+      ("M04", "C1603004"),
+      ("M05", "C1603006"),
+      ("M06", "C1603007"),
+      ("M07", "C1603008"),
+      ("M08", "C1603009"),
+      ("M09", "C1603011"),
+      ("M10", "C1603012");
+
+
+Create book table:
+CREATE TABLE book(
+    book_no VARCHAR(10) NOT NULL PRIMARY KEY,
+    book_name VARCHAR(255) NOT NULL,
+    author VARCHAR(45) NOT NULL
+    )DEFAULT CHARACTER SET utf8;
+
+Inputs:
+INSERT INTO book
+VALUES ("B001", "Database Design", "Adrienne Watt"),
+	   ("B002", "Databases, Types, and the Relational Model: The Third Manifesto", "Hugh Darwen "),
+       ("B003", "Database Lifecycle Management: Achieving Continuous Delivery", "Matthew Skelton"),
+       ("B004", "Theory of Relational Databases", "David Maier"),
+       ("B005", "Foundations of Databases: The Logical Level", "Serge Abiteboul"),
+       ("B006", "Database Fundamentals", "Liviu Perniu"),
+       ("B007", "Concurrency Control and Recovery in Database Systems", "Nathan Goodman "),
+       ("B008", "Developing Time-Oriented Database Applications in SQL", "Richard T. Snodgrass"),
+       ("B009", "Database Design and Implementation using Oracle SQL", "Howard Gould"),
+       ("B010", "Relational Data Model, Normalisation and Effective Database Design", "Tony Marston "),
+       ("B011", "Database Systems and Structures", "Osmar R. Zaiane"),
+       ("B012", "Database Design with UML and SQL", "Tom Jewett"),
+       ("B013", "Temporal Database Management", "Christian S. Jensen"),
+       ("B014", "Making Sense of Stream Processing: Behind Apache Kafka", "Martin Kleppmann"),
+       ("B015", "Information Modeling: Specification and Implementation", "David Edmond "),
+       ("B016", "Category Theory for the Sciences", "David I. Spivak"),
+       ("B017", "Modeling with Data: Tools and Techniques for Scientific Computing", "Ben Klemens"),
+       ("B018", "Data-Oriented Design", "Richard Fabian"),
+       ("B019", "Introduction to Information Retrieval", "Christopher Manning"),
+       ("B020", "Multimedia Fingerprinting Forensics for Traitor Tracing", "K. J. Liu")
+       ("B021", "Computer Networks", "Tanenbaum"),
+       ("B022", "Operating Systems: Design and Implementation", "Tanenbaum"),
+       ("B023", "Modern Operating Systems", "Tanenbaum"),
+       ("B024", "Distributed Operating Systems", "Tanenbaum"),
+       ("B025", "Distributed Systems: Principles and Paradigms", "Tanenbaum");
+
+
+Create iss_rec table:
+CREATE TABLE iss_rec(
+    iss_no INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    iss_date DATE NOT NULL,
+    mem_no VARCHAR(10) NOT NULL,
+    book_no VARCHAR(10) NOT NULL,
+    FOREIGN KEY (mem_no) REFERENCES membership(mem_no),
+    FOREIGN KEY (book_no) REFERENCES book(book_no)
+    )DEFAULT CHARACTER SET utf8;
+
+ Trigger on iss_rec:
+DROP TRIGGER IF EXISTS before_iss_rec_insert;
+
+DELIMITER $$
+CREATE TRIGGER before_iss_rec_insert
+	BEFORE INSERT ON iss_rec
+    FOR EACH ROW
+    BEGIN
+    	IF (SELECT COUNT(*) FROM iss_rec WHERE NEW.mem_no=iss_rec.mem_no) = 3
+        	THEN
+            	SIGNAL SQLSTATE '45001'
+                SET MESSAGE_TEXT = "You have already rented 3 books.";
+        END IF;
+        SET NEW.iss_date = CURRENT_DATE();
+    END;
+$$
+DELIMITER ;
+
+Input:
+INSERT INTO iss_rec(mem_no, book_no)
+VALUES ("M01", "B001"),
+	   ("M01", "B003"),
+       ("M01", "B005"),
+       ("M02", "B002"),
+       ("M03", "B009"),
+       ("M06", "B004"),
+       ("M10", "B020"),
+       ("M10", "B019"),
+       ("M06", "B011"),
+       ("M07", "B010"),
+       ("M09", "B015"),
+       ("M09", "B013")
+       ("M02", "B021"),
+       ("M05", "B023"),
+       ("M06", "B023");
+
+
+queries:
+3.
+SELECT student.stude_name, book.book_name, book.author
+FROM student, membership, book, iss_rec
+WHERE iss_rec.iss_date = '2019-08-28' AND
+	  iss_rec.mem_no = membership.mem_no AND
+      membership.stud_no = student.stud_no AND
+      iss_rec.book_no = book.book_no;
+
+4.
+SELECT student.stud_no, student.stude_name
+FROM  student, membership, book, iss_rec
+WHERE book.author = "Tanenbaum" AND
+	  book.book_no = iss_rec.book_no AND
+      iss_rec.mem_no = membership.mem_no AND
+      membership.stud_no = student.stud_no;
+
+5.
+SELECT student.stud_no, student.stude_name, COUNT(*) AS TotalBorrowed
+FROM student, membership, iss_rec
+WHERE iss_rec.mem_no = membership.mem_no AND
+	  membership.stud_no = student.stud_no
+GROUP BY iss_rec.mem_no;
+
+6.
+SELECT student.stud_no, student.stude_name
+FROM student, membership, iss_rec
+WHERE student.stud_no = membership.stud_no AND
+	  membership.mem_no = iss_rec.mem_no
+GROUP BY iss_rec.mem_no
+HAVING COUNT(*) = 3;
+
+7.
+SELECT book.book_name
+FROM student, membership, book, iss_rec
+WHERE student.stud_no = "C1603002" AND
+	  membership.stud_no = student.stud_no AND
+      iss_rec.mem_no = membership.mem_no AND
+      book.book_no = iss_rec.book_no;
+
+8.
+SELECT DISTINCT(book.book_no), book.book_name, book.author
+FROM book, iss_rec
+WHERE iss_rec.book_no = book.book_no AND
+	  iss_rec.iss_date = CURRENT_DATE();
