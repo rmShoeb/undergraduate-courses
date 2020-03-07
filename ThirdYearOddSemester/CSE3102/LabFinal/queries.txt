@@ -1,0 +1,80 @@
+customer table:
+CREATE TABLE customer(
+    cust_id INT NOT NULL PRIMARY KEY,
+    cust_name VARCHAR(45) NOT NULL
+    )DEFAULT CHARACTER SET utf8;
+
+inputs:
+INSERT INTO customer
+VALUES(1603001, 'Shegufa'),
+	  (1603002, 'Nasif'),
+      (1603003, 'Hasib'),
+      (1603004, 'Muntashir'),
+      (1603005, 'Shamiul'),
+      (1603006, 'Rakib'),
+      (1603007, 'Yamin'),
+      (1603008, 'Siam');
+
+Item table:
+CREATE TABLE item(
+    item_id INT NOT NULL PRIMARY KEY,
+    item_name VARCHAR(50) NOT NULL,
+    price INT NOT NULL
+    )DEFAULT CHARACTER SET utf8;
+
+inputs:
+INSERT INTO item
+VALUES(101, 'book', 10),
+	  (102, 'pen', 11),
+      (103, 'scale', 19),
+      (104, 'pencil', 12),
+      (105, 'eraser', 15),
+      (106, 'cutter', 17),
+      (107, 'color', 13),
+      (108, 'sheets', 20),
+      (109, 'file', 18),
+      (110, 'calender', 14);
+
+sale table:
+CREATE TABLE sale(
+    bill_no INT NOT NULL PRIMARY KEY,
+    bill_date DATE NOT NULL,
+    cust_id INT NOT NULL,
+    item_id INT NOT NULL,
+    qty_sold INT NOT NULL,
+    FOREIGN KEY (cust_id) REFERENCES customer(cust_id),
+    FOREIGN KEY (item_id) REFERENCES item(item_id)
+    )DEFAULT CHARACTER SET utf8;
+
+inputs:
+
+INSERT INTO `sale` (`bill_no`, `bill_date`, `cust_id`, `item_id`, `qty_sold`)
+VALUES ('190916', '2019-09-01', '1603001', '101', '5'),
+('190811', '2019-08-11', '1603002', '102', '10'),
+('190812', '2019-08-12', '1603003', '103', '1'),
+('190809', '2019-08-09', '1603004', '104', '2'),
+('190815', '2019-08-15', '1603005', '105', '3'),
+('190720', '2019-07-20', '1603006', '106', '5'),
+('190825', '2019-08-25', '1603007', '107', '15'),
+('190731', '2019-07-31', '1603008', '108', '100'),
+('190821', '2019-08-21', '1603011', '109', '5'),
+('190101', '2019-01-01', '1603013', '110', '12');
+
+
+queries:
+1.
+SELECT customer.cust_name, SUM(sale.qty_sold) AS TotalBought
+FROM customer, sale
+WHERE customer.cust_id = sale.cust_id
+GROUP BY sale.cust_id;
+
+2.
+SELECT item.item_name, sale.qty_sold, (sale.qty_sold * item.price) AS TotalPrice
+FROM sale, item
+WHERE sale.item_id = item.item_id;
+
+3.
+SELECT customer.cust_name, item.item_name, sale.qty_sold, (sale.qty_sold * item.price) AS TotalBillable
+FROM customer, sale, item
+WHERE sale.item_id = item.item_id AND
+	  customer.cust_id = sale.cust_id;
