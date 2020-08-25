@@ -1,11 +1,13 @@
 # **CSE3206_ComputerNetworks**
 ---
 **Task-1**
+
 create a server-client applicaton (chatbot)
 * server and client both can send messages
 * both can terminate connection anytime they want
 
 **Task-2**
+
 now send objects containing:
 * header of any type
 * data of int/float/string
