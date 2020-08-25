@@ -1,0 +1,39 @@
+-static member
+-static object
+Q: How to access static member variable?
+case a: if the static member is a constant, make it public.
+
+-Nested Class
+class A
+{
+	public:
+		class  B
+		{...................}
+	private:
+		class C
+		{..................}
+}
+-void *p
+-p is a pointer that points to an unknown type.
+int *a=new int(2)
+int *b=new float(3.1416)
+void display(void *p)
+{
+	cout<< *p <<endl;
+}
+display(a);
+display(b);
+
+-enum type
+
+-typedef
+typedef unsigned char byte
+byte a;
+
+-struct (discouraged in c++)
+-multiple inheritance (discouraged in c++)
+
+-container
+-it contain objects of other classes
+-may contain objects themselves
+-may contain pointer to objects
