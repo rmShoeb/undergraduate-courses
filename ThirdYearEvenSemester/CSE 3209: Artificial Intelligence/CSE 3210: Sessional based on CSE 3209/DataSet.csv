@@ -1,0 +1,21 @@
+Age,Education,Income,Marital Status,Buy Computer
+36-55,Masters,High,Single,Yes
+18-35,High School,Low,Single,No
+36-55,Masters,Low,Single,Yes
+18-35,Bachelors,High,Single,No
+<18,High School,Low,Single,Yes
+18-35,Bachelors,High,Marirred,No
+36-55,Bachelors,Low,Married,No
+>55,Bachelors,High,Single,Yes
+36-55,Masters,Low,Married,No
+>55,Masters,Low,Married,Yes
+36-55,Masters,High,Single,Yes
+>55,Masters,High,Single,Yes
+<18,High School,High,Single,No
+36-55,Masters,Low,Single,Yes
+36-55,High School,Low,Single,Yes
+<18,High School,Low,Married,Yes
+18-35,Bachelors,High,Married,No
+>55,High School,High,Married,Yes
+>55,Bachelors,Low,Single,Yes
+36-55,High School,High,Marired,No
