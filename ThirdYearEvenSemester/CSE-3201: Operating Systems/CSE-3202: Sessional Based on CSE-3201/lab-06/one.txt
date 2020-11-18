@@ -1,0 +1,307 @@
+rmshoeb@rmshoeb-HP-Notebook:~$ touch a.sh
+
+rmshoeb@rmshoeb-HP-Notebook:~$ nano a.sh
+
+rmshoeb@rmshoeb-HP-Notebook:~$ ./a.sh
+hello world
+
+rmshoeb@rmshoeb-HP-Notebook:~$ i=1
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $i
+1
+
+rmshoeb@rmshoeb-HP-Notebook:~$ j=5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $j
+5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read j
+4
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $j
+4
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo i= $i and j= $j
+i= 1 and j= 4
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((i+j))
+5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ k= $((i+j))  
+5: command not found
+
+rmshoeb@rmshoeb-HP-Notebook:~$ k=$((i+j)) 
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $k
+5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ nano a.sh
+
+rmshoeb@rmshoeb-HP-Notebook:~$ ./a.sh
+hello world
+6
+k
+
+rmshoeb@rmshoeb-HP-Notebook:~$ nano a.sh
+
+rmshoeb@rmshoeb-HP-Notebook:~$ ./a.sh   
+hello world
+5
+5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ ls -l
+total 2
+-rwxrwxrwx 1 rmshoeb rmshoeb  68 নভেম্বর   18 15:18 a.c
+-rwxrwxrwx 1 rmshoeb rmshoeb  47 নভেম্বর   18 15:33 a.sh
+-rwxrwxrwx 1 rmshoeb rmshoeb 142 নভেম্বর   18 15:12 one.cpp
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((i/j))
+0
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((i*j))
+4
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((i-j))
+-3
+
+rmshoeb@rmshoeb-HP-Notebook:~$ a=1.5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo a
+a
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $a
+1.5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((a/j))
+bash: 1.5: syntax error: invalid arithmetic operator (error token is ".5")
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((0.5/0.9))
+bash: 0.5/0.9: syntax error: invalid arithmetic operator (error token is ".5/0.9")
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $((0.5/0.9))|bc
+bash: 0.5/0.9: syntax error: invalid arithmetic operator (error token is ".5/0.9")
+
+rmshoeb@rmshoeb-HP-Notebook:~$ t=$((0.5/0.9))   
+bash: 0.5/0.9: syntax error: invalid arithmetic operator (error token is ".5/0.9")
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $t|bc
+
+rmshoeb@rmshoeb-HP-Notebook:~$ t=0.5/0.9
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $t
+0.5/0.9
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $t|bc
+0
+
+rmshoeb@rmshoeb-HP-Notebook:~$ t=$a+$j     
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo t
+t
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $t
+1.5+4
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $t|bc
+5.5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ $a+$j|bc
+1.5+4: command not found
+
+rmshoeb@rmshoeb-HP-Notebook:~$ bc=bash calculator
+
+Command 'calculator' not found, did you mean:
+
+  command 'galculator' from deb galculator (2.1.4-1build1)
+
+Try: sudo apt install <deb name>
+
+rmshoeb@rmshoeb-HP-Notebook:~$ bc="bash calculator"
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $bc
+bash calculator
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo "scale=4;a/3"|bc
+0
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo "scale=4;4/3"|bc
+1.3333
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo "scale=4;0.5/0.9"|bc
+.5555
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo "sqrt(13)"|bc
+3
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo "scale=2;sqrt(13)"|bc
+3.60
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read a b
+4
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $b
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read a b
+4 3
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $b 
+3
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read s
+hi hello there
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $s
+hi hello there
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read s p q
+hi hello there
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $s   
+hi
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $p
+hello
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $q
+there
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read a
+4 3
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $a
+4 3
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read -p "Enter Username: " user
+Enter Username: riyad
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $user
+riyad
+
+rmshoeb@rmshoeb-HP-Notebook:~$ read -sp "Enter Password: " pass
+Enter Password: rmshoeb@rmshoeb-HP-Notebook:~$ echo $pass
+rmshoeb
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [$user -eq riyad]
+> echo "hello"
+> fi
+bash: syntax error near unexpected token `fi'
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [$user -eq riyad]
+> then
+> echo "hello"
+> fi
+[riyad: command not found
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [$user -eq 10]; then echo "hello"; fi     
+[riyad: command not found
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user -eq 10]; then echo "hello"; fi
+bash: [: missing `]'
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user -eq 10 ]; then echo "hello"; fi
+bash: [: riyad: integer expression expected
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user -eq 10 ]
+> then
+> echo "valid"
+> else
+> echo "invalid"
+> fi
+bash: [: riyad: integer expression expected
+invalid
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user == "riyad" ]; then echo "valid"; else echo "invalid"; fi      
+valid
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user != "riyad" ]; then echo "valid"; else echo "invalid"; fi 
+invalid
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user > "riyad" ]; then echo "valid"; else echo "invalid"; fi  
+valid
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $user < "riyad" ]; then echo "valid"; else echo "invalid"; fi 
+valid
+
+rmshoeb@rmshoeb-HP-Notebook:~$ i=1
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $i
+1
+
+rmshoeb@rmshoeb-HP-Notebook:~$ while [ $i -le 10 ]
+> do
+> echo $i
+> ((i++))
+> done
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+rmshoeb@rmshoeb-HP-Notebook:~$ name[0]=a
+
+rmshoeb@rmshoeb-HP-Notebook:~$ name[1]=b
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo $name[0]
+a[0]
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo ${name[0]}
+a
+
+rmshoeb@rmshoeb-HP-Notebook:~$ i=0
+
+rmshoeb@rmshoeb-HP-Notebook:~$ while [ $i -le 10 ]
+> do
+> a[$i]=$i
+> ((i++))
+> done
+
+rmshoeb@rmshoeb-HP-Notebook:~$ echo ${a[5]}
+5
+
+rmshoeb@rmshoeb-HP-Notebook:~$ for i in {0..10}
+> do
+> echo $i
+> done
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+rmshoeb@rmshoeb-HP-Notebook:~$ for ((i=0; i<=10; i++))
+> do
+> echo $i
+> don
+> ^C
+
+rmshoeb@rmshoeb-HP-Notebook:~$ for ((i=0; i<=10; i++)); do echo $i; done
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+rmshoeb@rmshoeb-HP-Notebook:~$ if [ $i -ge 5 ] && [ $i -le 15 ]
+> then
+> echo true
+> else
+> echo false
+> fi
+true
