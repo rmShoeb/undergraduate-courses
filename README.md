@@ -1,41 +1,54 @@
 # **First Year**
----
+## **Odd Semester**
+## **Even Semester**
 <details>
-  <summary><b>Odd Semester</b></summary>
+<summary><a href="tree/master/1-2/CSE 1201">CSE 1201: Data Structures</a></summary>
 </details>
-
 <details>
-<summary><b>Even Semester</b></summary>
-
-* [CSE 1201: Data Structures](../1-2/CSE%201201)
-* [CSE 1203: Object Oriented Programming](../1-2/CSE%201202)
+<summary><a href="tree/master/1-2/CSE 1203">CSE 1203: Object Oriented Programming</a></summary>
 </details>
-
 
 # **Second Year**
----
-**Odd Semester**
-* [CSE 2101: Discrete Mathematics](https://github.com/rmShoeb/CodesOfUniversityCourses/tree/master/SecondYearOddSemester/CSE%202101:%20Discrete%20Mathematics)
+## **Odd Semester**
+<details>
+<summary><a href="tree/master/2-1/CSE 2101">CSE 2101: Discrete Mathematics</a></summary>
+</details>
 
-
-**Even Semester**
-* [CSE 2201: Computer Algorithms](https://github.com/rmShoeb/CodesOfUniversityCourses/tree/master/SecondYearEvenSemester/CSE2201:%20Computer%20Algorithms)
-
+## **Even Semester**
+<details>
+<summary><a href="tree/master/2-2/CSE 2201">CSE 2201: Computer Algorithms</a></summary>
+</details>
 
 # **Third Year**
----
-**Odd Semester**
-* [CSE 3102: Database Systems](https://github.com/rmShoeb/CodesOfUniversityCourses/tree/master/ThirdYearOddSemester/CSE3102)
-* [CSE 3110:](https://github.com/rmShoeb/CodesOfUniversityCourses/tree/master/ThirdYearOddSemester/CSE3110)
+## **Odd Semester**
+<details>
+<summary><a href="tree/master/3-1/CSE 3101">CSE 3101: Database Systems</a></summary>
+</details>
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
 
-**Even Semeter**
-* (ongoing. will update at the end of the semester)
-
+## **Even Semester**
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
 
 # **Fourth Year**
----
-**Odd Semester**
-* ()
+## **Odd Semester**
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
 
-**Even Semeter**
-* ()
+## **Even Semester**
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
+<details>
+<summary><a href="tree/master/2-1/CSE 2101"></a></summary>
+</details>
