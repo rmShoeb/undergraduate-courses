@@ -1,2 +1,0 @@
-# CSE1203_ObjectOrientedProgramming
-# SessionalBasedOnCSE1203
