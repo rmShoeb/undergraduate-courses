@@ -1,17 +1,14 @@
 # **First Year**
 ---
-
-
 <details>
-  <summary>GitHub Stats</summary>
+  <summary><b>Odd Semester</b></summary>
 </details>
 
-**Odd Semester**
-* Didn't keep the codes :'(
-
-**Even Semester**
-* [CSE 1201: Data Structures](https://github.com/rmShoeb/CodesOfUniversityCourses/tree/master/FirstYearEvenSemester/CSE%201201:%20Data%20Structures)
-* [CSE 1203: Object Oriented Programming](https://github.com/rmShoeb/CodesOfUniversityCourses/tree/master/FirstYearEvenSemester/CSE%201203:%20Object%20Oriented%20Programming)
+<details>
+<summary><b>Even Semester</b></summary>
+* [CSE 1201: Data Structures](../1-2/CSE%201201)
+* [CSE 1203: Object Oriented Programming](../1-2/CSE%201202)
+</details>
 
 
 # **Second Year**
