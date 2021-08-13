@@ -1,5 +1,11 @@
 # **First Year**
 ---
+
+
+<details>
+  <summary>GitHub Stats</summary>
+</details>
+
 **Odd Semester**
 * Didn't keep the codes :'(
 
