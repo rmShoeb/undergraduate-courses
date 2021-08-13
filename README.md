@@ -2,7 +2,7 @@
 ## **Odd Semester**
 ## **Even Semester**
 <details>
-<summary><a href="tree/master/1-2/CSE 1201">CSE 1201: Data Structures</a></summary>
+<summary><a href="1-2/CSE 1201">CSE 1201: Data Structures</a></summary>
 </details>
 <details>
 <summary><a href="tree/master/1-2/CSE 1203">CSE 1203: Object Oriented Programming</a></summary>
