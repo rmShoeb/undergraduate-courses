@@ -6,6 +6,7 @@
 
 <details>
 <summary><b>Even Semester</b></summary>
+
 * [CSE 1201: Data Structures](../1-2/CSE%201201)
 * [CSE 1203: Object Oriented Programming](../1-2/CSE%201202)
 </details>
