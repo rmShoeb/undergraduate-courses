@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Lab Assistant | Search Results</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/home">Lab Assistant</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<p data-bs-toggle="modal" data-bs-target="#search">Search</p>
+					</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="#">
+						<p data-bs-toggle="modal" data-bs-target="#record_a_problem">Record a problem</p>
+					</a>
+				</li> -->
+			</ul>
+			<a href="/logout" class="d-flex" style="text-decoration: none;">
+				<button type="button" class="btn btn-outline-danger">
+					<svg id="i-signout" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"
+						fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="2">
+						<path d="M28 16 L8 16 M20 8 L28 16 20 24 M11 28 L3 28 3 4 11 4" />
+					</svg>
+					Logout
+				</button>
+			</a>
+		</div>
+	</div>
+</nav>
+
+<!-- search modal -->
+<div class="modal fade" id="search" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+	aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="staticBackdropLabel">Search</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<!-- search by student ID -->
+				<form class="row row-cols-lg-auto g-3 align-items-center m-1" action="/search-by-student-id"
+					method="POST">
+					<div class="col-12">
+						<label class="visually-hidden" for="studentID">Student ID</label>
+						<div class="input-group">
+							<div class="input-group-text"><span class="material-icons">account_box</span></div>
+							<input type="text" class="form-control" id="studentID" name="studentID"
+								placeholder="Student ID">
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Search by ID</button>
+					</div>
+				</form>
+				<!-- search by laptop searial no -->
+				<form class="row row-cols-lg-auto g-3 align-items-center m-1" action="/search-by-laptop-no"
+					method="POST">
+					<div class="col-12">
+						<label class="visually-hidden" for="laptopno">Laptop No</label>
+						<div class="input-group">
+							<div class="input-group-text"><span class="material-icons">computer</span></div>
+							<input type="text" class="form-control" id="laptopno" name="laptopno"
+								placeholder="Laptop No">
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Search by PC</button>
+					</div>
+				</form>
+				<!-- search by date -->
+				<form class="row row-cols-lg-auto g-3 align-items-center m-1" action="/search-by-date" method="POST">
+					<div class="col-12">
+						<label class="visually-hidden" for="date">Date</label>
+						<div class="input-group">
+							<div class="input-group-text"><span class="material-icons">calendar_today</span></div>
+							<input type="date" class="form-control" id="date" name="date">
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Search by Date</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- report a problem modal -->
+<div class="modal fade" id="record_a_problem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+	aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="staticBackdropLabel">Report a problem</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="alert alert-primary" role="alert" style="text-align: center;">
+					Make sure all information are correct.<br>
+					Once reported, the laptop will not be available for students until it is fixed.
+				</div>
+				<form action="/report-a-problem" method="post">
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="pc-no" name="pc-no" placeholder="Laptop No"
+							required>
+						<label for="pc-no">Laptop No</label>
+					</div>
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="issue" name="issue" placeholder="Describe the issue"
+							required>
+						<label for="issue">Describe the issue</label>
+					</div>
+					<div class="mb-3">
+						<button type="submit" class="btn btn-primary">Record</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="card m-2">
+		<h5 class="card-header">Search Results</h5>
+		<div class="card-body">
+			<table class="table table-sm table-light">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">Date</th>
+								<th scope="col">Laptop No</th>
+								<th scope="col">Student ID</th>
+								<th scope="col">Assign Time</th>
+								<th scope="col">Return Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for record in list_of_tuples %}
+							<tr>
+								<td>{{ record[1] }}</td>
+								<td>{{ record[3] }}</td>
+								<td>{{ record[2] }}</td>
+								<td>{{ record[4] }}</td>
+								<td>{{ record[5] }}</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</table>
+			<a href="/home" style="text-decoration: none;">
+				<button class="btn btn-outline-success d-flex">
+					<span class="material-icons">
+						home
+					</span>Go back home
+				</button>
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

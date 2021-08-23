@@ -1,28 +1,36 @@
 # **CSE3206_ComputerNetworks**
----
-**MSS**
----
+
+### **MSS**
+
 **Task 01**
-create a server-client application (simple) where the server will response according to the client.
+
+create a simple server-client application where the server will response according to the client.
 
 **Task 02**
-create a server-client applicaton (chatbot)
+
+create a server-client applicaton (chatbot-like)
 * server and client both can send messages
 * both can terminate connection anytime they want
 
 **Task 03**
 
-now send objects containing:
+send objects containing:
 * header of any type
-* data of int/float/string
+* data of ```int/float/string``` type
 * protocol id
 * tailer to send parity - even (binary)
 
 **Task 04**
+
 * client will send an object
 * server will send an acknowlwdement containing
+```java
 	header = null;
 	message = null;
-	protocolID = null
-	acknowldement = header of the recieved object
-	parity
+	protocolID = null;
+	acknowldement = header of the recieved object;
+	parity;
+```
+
+
+### **MZI**

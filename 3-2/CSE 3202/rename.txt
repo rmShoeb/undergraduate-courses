@@ -1,0 +1,15 @@
+current directory: pwd
+list the shell interpretors: /etc/shells
+sh: born shell
+bash: born again shell
+directory of sh: which sh
+permission: r(read), w(write), x(execute), t()
+drwxrwxrwx: d means directory, first three is for owner permission, second three is for filegroup permission and last three is for other permission.
+to change permission: chmod +x filename (+x means add permission to execute the filename)
+to see PID of root: ps aux|grep init
+to see running processes: top
+    PID: process ID
+    PR: parent process ID
+    NI: nice ID
+    S: State
+read Zombie Process
