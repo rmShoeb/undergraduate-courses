@@ -1,4 +1,4 @@
-# **CSE3206_ComputerNetworks**
+# **CSE 3206: Sessional Based On CSE 3205**
 
 ### **MSS**
 
