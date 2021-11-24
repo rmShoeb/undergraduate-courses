@@ -1,0 +1,3 @@
+2556002 op 2556003
+Types are incompatiable
+Syntax error at line 3

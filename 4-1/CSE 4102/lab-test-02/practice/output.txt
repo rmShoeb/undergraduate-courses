@@ -1,0 +1,4 @@
+inserting a with type 3
+1 op 2
+Type REAL and Type CHAR are incompatiable
+Syntax error at line 2
