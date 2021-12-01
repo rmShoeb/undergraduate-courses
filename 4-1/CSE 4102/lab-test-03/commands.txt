@@ -1,0 +1,10 @@
+\masm32\bin\ml /c /Zd /coff file.asm
+or,
+\masm32\bin\ml /c \coff /Cp file.asm
+
+\masm32\bin\Link /SUBSYSTEM:CONSOLE file.obj
+or,
+\masm32\bin\link -entry:main /subsystem:console file.obj
+
+file.exe	-> in cmd
+./file		-> in powershell

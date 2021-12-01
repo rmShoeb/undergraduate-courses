@@ -232,6 +232,11 @@
 
 <details>
 <summary><a href="4-1/CSE 4102">CSE 4102: Sessional Based on CSE 4101</a></summary>
+<b>Books</b>
+<ul>
+<li><a href="https://www.pdfdrive.com/lex-yacc-2nd-edition-e48298367.html">Lex & Yacc - John R. Levine, Tony Mason and Doug Brown</a></li>
+<li><a href="https://www.pdfdrive.com/flex-bison-text-processing-tools-e164705178.html">Flex & Bison - John Levine</a></li>
+</ul>
 </details>
 
 <!-- <details>
