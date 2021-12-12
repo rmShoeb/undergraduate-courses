@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/rmshoeb98/.cache/gnome-builder/install/lab-02-online/host
+app-id=
+postbuild=
+prebuild=
+default=true

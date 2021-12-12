@@ -1,0 +1,5 @@
+while(myvar line =< 12.0){
+    if(--num == 0){
+        last;
+    }
+}

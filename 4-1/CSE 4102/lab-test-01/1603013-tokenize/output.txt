@@ -1,0 +1,10 @@
+int TYPE
+a ID
+[ LSB
+10 NUM
+] RSB
+= ASSIGN
+{ LB
+0 NUM
+} RB
+; SEMI

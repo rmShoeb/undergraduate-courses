@@ -1,0 +1,2 @@
+Types are incompatiable
+Syntax error at line 3
