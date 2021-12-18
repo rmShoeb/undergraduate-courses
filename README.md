@@ -3,7 +3,6 @@
 [<img src="https://img.shields.io/badge/Overleaf-Front Cover Template-informational?style=for-the-badge&logo=overleaf">](https://www.overleaf.com/read/kbjnwsnsgtyv)<br>
 <!-- ![GitHub contributors](https://img.shields.io/github/contributors/rmShoeb/university-courses?style=plastic) -->
 ![GitHub last commit](https://img.shields.io/github/last-commit/rmShoeb/university-courses)
-<img src="https://img.shields.io/badge/looking%20for%20collaborators-from%20RUET%20CSE-important"/>
 
 # **First Year**
 ## **Odd Semester**
