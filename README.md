@@ -1,6 +1,8 @@
 <!-- # **Resources** -->
 [<img src="https://img.shields.io/badge/Google Drive-University-important?style=for-the-badge&logo=googledrive">](https://drive.google.com/drive/folders/1kpmEwcuAcUSkSqxyM8fBIbXYtwFFneEI?usp=sharing)
-[<img src="https://img.shields.io/badge/Overleaf-Front Cover Template-informational?style=for-the-badge&logo=overleaf">](https://www.overleaf.com/read/kbjnwsnsgtyv)<br>
+[<img src="https://img.shields.io/badge/Overleaf-Front Cover Template-informational?style=for-the-badge&logo=overleaf">](https://www.overleaf.com/read/kbjnwsnsgtyv)
+[<img src="https://img.shields.io/badge/Telegram-PDF Collection-green?style=for-the-badge&logo=telegram">](https://t.me/joinchat/V-3m4AQ42mFusDJz)
+<br>
 <!-- ![GitHub contributors](https://img.shields.io/github/contributors/rmShoeb/university-courses?style=plastic) -->
 ![GitHub last commit](https://img.shields.io/github/last-commit/rmShoeb/university-courses)
 
@@ -46,6 +48,14 @@
 
 <details>
 <summary><a href="1-2/CSE 1204">CSE 1204: Sessional based on CSE 1203</a></summary>
+</details>
+
+<details>
+<summary><a href="1-2/Phy 1213">Phy 1213: Physics</a></summary>
+<b>Books</b>
+<ul>
+<li><a href="https://t.me/c/1475208928/101">C++: The Complete Reference - Herbert Schildt</a></li>
+</ul>
 </details>
 
 # **Second Year**
