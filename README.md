@@ -88,6 +88,19 @@
 <summary><a href="2-1/CSE 2104">CSE 2104: Sessional based on CSE 2103</a></summary>
 </details>
 
+<details>
+<summary><a href="#">HUM 2113</a></summary>
+<b>Books</b>
+<ul>
+<li><a href="https://www.pdfdrive.com/accounting-principles-12th-edition-by-jerry-weygandt-drsoc-e28734318.html">Accounting Principles - Jerry Weygandt, 12th Edition</a></li>
+<li><a href="https://downloadallbooks.com/483?pt=9vSgeG%2B2PpgQeA52NPKxoJgn6VmbyXWnlnS%2BYr89pFY%3D">Financial Accounting</a></li>
+<li><a href="https://www.pdfdrive.com/financial-accounting-the-impact-on-decision-makers-e186458980.html">Financial Accounting: The Impact on Decision Makers</a></li>
+<li><a href="https://www.pdfdrive.com/management-e192943206.html">Management - Richard L. Daft</a></li>
+<li><a href="https://www.pdfdrive.com/management-e188227432.html">Management - Ricky W. Griffin, 11th Edition</a></li>
+</ul>
+</details>
+
+
 ## **Even Semester**
 <details>
 <summary><a href="#">CSE 2201: Computer Algorithms</a></summary>
