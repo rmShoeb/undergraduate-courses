@@ -54,7 +54,7 @@
 <summary><a href="1-2/Phy 1213">Phy 1213: Physics</a></summary>
 <b>Books</b>
 <ul>
-<li><a href="https://t.me/c/1475208928/101">C++: The Complete Reference - Herbert Schildt</a></li>
+<li><a href="https://t.me/c/1475208928/101">Physics</a></li>
 </ul>
 </details>
 
@@ -76,13 +76,13 @@
 <summary><a href="2-1/CSE 2102">CSE 2102: Sessional based on CSE 2101</a></summary>
 </details>
 
-<!-- <details>
+<details>
 <summary><a href="#">CSE 2103: Numerical Methods</a></summary>
 <b>Books</b>
 <ul>
-<li><a href=""></a></li>
+<li><a href="https://t.me/c/1475208928/309">Numerical Methods in Engineering and Science - B. S. Grewal</a></li>
 </ul>
-</details> -->
+</details>
 
 <details>
 <summary><a href="2-1/CSE 2104">CSE 2104: Sessional based on CSE 2103</a></summary>
@@ -94,6 +94,8 @@
 <b>Books</b>
 <ul>
 <li><a href="https://www.pdfdrive.com/introduction-to-algorithms-third-edition-e42987274.html">Introduction to Algorithms - Thomas H. Cormen</a></li>
+<li><a href="https://t.me/c/1475208928/189">The Spirit of Computing - David Harel, third edition</a></li>
+
 </ul>
 </details>
 
@@ -139,7 +141,7 @@
 <summary><a href="#">CSE 3102: Sessional Based on CSE 3101</a></summary>
 </details>
 
-<!-- <details>
+<details>
 <summary><a href="#">CSE 3103: Data Communication</a></summary>
 </details>
 
@@ -149,6 +151,10 @@
 
 <details>
 <summary><a href="#">CSE 3105: Software Engineering</a></summary>
+<b>Books</b>
+<ul>
+<li><a href="https://t.me/c/1475208928/233">Software Engineering - Roger S. Pressman</a></li>
+</ul>
 </details>
 
 <details>
@@ -157,7 +163,7 @@
 
 <details>
 <summary><a href="#">CSE 3109: Microprocessors and Assembly Language</a></summary>
-</details> -->
+</details>
 
 <details>
 <summary><a href="#">CSE 3110: Sessional Based on CSE 3109</a></summary>
@@ -194,15 +200,15 @@
 
 <!-- <details>
 <summary><a href="3-2/CSE 3204">CSE 3204: Sessional Based on CSE 3203</a></summary>
-</details>
+</details> -->
 
 <details>
 <summary><a href="#">CSE 3205: Computer Networks</a></summary>
 <b>Books</b>
 <ul>
-<li><a href=""></a></li>
+<li><a href="https://t.me/c/1475208928/261">Computer Networking - James F. Kurose and Keith W. Ross, sixth edition</a></li>
 </ul>
-</details> -->
+</details>
 
 <details>
 <summary><a href="3-2/CSE 3206">CSE 3206: Sessional Based on CSE 3205</a></summary>
