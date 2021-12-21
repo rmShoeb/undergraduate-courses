@@ -89,6 +89,18 @@
 </details>
 
 <details>
+<summary><a href="2-1/EEE 2151">EEE 2151</a></summary>
+<b>Books</b>
+<ul>
+<li><a href="https://www.pdfdrive.com/analog-electronics-with-labview-e18770419.html">Analog Electronics with LabVIEW - Kenneth L. Ashley</a></li>
+<li><a href="https://www.pdfdrive.com/op-amps-and-linear-integrated-circuits-4th-edition-e187947439.html">Op-Amps and Linear Integrated Circuits - Ramakant A. Gayakwad, 4th Edition</a></li>
+<li><a href="https://www.pdfdrive.com/operational-amplifiers-and-linear-integrated-circuits-3e-e36008330.html">Operational Amplifiers and Linear Integrated Circuits - James M. Fiore, third edition</a></li>
+<li><a href="https://www.pdfdrive.com/electronic-devices-and-circuit-theory-by-robert-l-boylestad-louis-nashelsky-pearson-11th-edition-e200834110.html">Electronic Devices and Circuit Theory - Robert L. Boylestad, Louis Nashelsky, Eleventh Edition</a></li>
+<li><a href="https://www.pdfdrive.com/analog-electronics-with-labview-e18770419.html">Analog Electronics with LabVIEW - Kenneth L. Ashley</a></li>
+</ul>
+</details>
+
+<details>
 <summary><a href="#">HUM 2113</a></summary>
 <b>Books</b>
 <ul>
