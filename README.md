@@ -112,6 +112,18 @@
 </ul>
 </details>
 
+<details>
+<summary><a href="#">Math 2113</a></summary>
+<b>Books</b>
+<ul>
+<li><a href="https://www.pdfdrive.com/elementary-linear-algebra-10th-edition-e57849882.html">Elementary Linear Algebra - Howard Anton, Chris Rorres, 10th edition</a></li>
+<li><a href="https://www.pdfdrive.com/schaums-outlines-linear-algebra-e158392473.html">Schaum's outlines: Linear algebra - Seymour Lipschutz, Marc Lars Lipson, sixth edition</a></li>
+<li><a href="https://www.pdfdrive.com/schaums-outline-of-theory-and-problems-of-linear-algebra-e164843239.html">Schaum's outline: Theory and Problems of Linear Algebra - Lipschutz S. and Lipson M., third edition</a></li>
+<li><a href="https://www.pdfdrive.com/vector-analysis-e38220594.html">Schaum's outline: Vector Analysis and an Introduction to Tensor Analysis - Murray R. Spiegel</a></li>
+<li><a href="https://www.scribd.com/document/433667289/Matrices-by-PN-Chatterjee">Matrices - PN Chatterjee</a></li>
+</ul>
+</details>
+
 
 ## **Even Semester**
 <details>
