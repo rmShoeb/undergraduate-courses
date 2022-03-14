@@ -1,0 +1,146 @@
+Digital Image Processing - Rafael C. Gonzalez, Richard E. Woods, fourth edition
+Chapter - 1: Introduction
+	1.1: What is Digital Image Processing?
+	1.3: Examples of Fields that use Digital Image Processing (just a reading will suffice)
+		Gamma Ray Imaging
+		X-Ray Imaging
+		Imaging in the Ultraviolet Band
+		Imaging in the Visible and Infrared Bands
+		Imaging in the Microwave Band
+		Imaging in the Radio Band
+	1.4: Fundamental Steps in Digital Image Processing (optional)
+Chapter - 2: Digital Image Fundamentals
+	2.1: Elements of Visual Perception (optional)
+		Structure of the Human Eye
+		Image Formation in the Eye
+		Brightness Adaptation and Discrimination
+	2.2: Light and the Electromagnetic Spectrum (optional)
+	2.3: Image Sensing and Acquisition
+		Image Acquisition using a Single Sensing Element
+		Image Acwuisition using Sensor Strips
+		Image Acquisition using Sensor Arrays
+		A Simple Image Formation Model
+	2.4: Image Sampling and Quantization
+		Basic Concepts in Sampling and Quantization
+		Representing Digital Images
+		Spatial and Intensity Resolution
+		Image Interpolation
+	2.5: Some Basic Relationships between Pixels
+		Neighbors of a Pixel
+		Adjacency, Connectivity, Regions, and Boundaries
+		Distance Measures
+	2.6: Introduction to the Basic Mathematical Tools used in Digital Image Processing
+		Elementwise versus Matrix Operations
+		Linear versus Nonlinear Operations
+		Arithmetic Operations
+		Set and Logical Operations
+			Basic Set Operations
+			Logical Operations
+Chapter - 3: Intensity Transformations and Spatial Filtering
+	3.1: Background
+		The Basics of Intensity Transformations and Spatial Filtering
+		About the examples in this Chapter
+	3.2: Some Basic Intensity Transformation Functions
+		Image Negatives
+		Log Transformations
+		Power-law (Gamma) Transformations
+		Piecewise Linear Transformation Functions
+			Contrast Streching
+			Intensity-level Slicing
+			Bit-plane Slicing
+	3.3: Histogram Processing
+		Histogram Equalization
+		Histogram Matching (Specification)
+		Local Histogram Processing
+	3.4: Fundamentals of Spatial Filtering
+		The Mechanics of Linear Spacial Filtering
+		Spatial Correlation and Convolution
+	3.5: Smooting (Lowpass) Spatial Filters
+		Box Filter Kernels
+		Order-Statistic (Nonlinear) Filters
+	3.6: Sharpening (Highpass) Spatial Filters
+		Foundation
+		Using the Second Derivative for Image Sharpening - The Laplacian
+		Unsharp Masking and Highboost Filtering
+		Using First-Order Derivatives for Image Sharpening - The Gradient
+	3.8: Combining Spatial Enhancement Methods
+Chapter - 4: Filtering in the Frequency Domain
+	4.4: The Discrete Fourier Transform of One Variable
+	Some Properties of the 2-D DFT and IDFT
+	Image Smoothing using Lowpass Frequency Domain Filter
+	Image Sharpening uing High pass filters
+Chapter - 5: Image Restoration and Reconstruction
+	Noise Models
+	Restoration in the presence of Noise only-Spatial Filtering
+Chapter - 7: Wavelet and Other Image Transforms
+	7.3: Correlation
+	7.6: Fourier-Related Transforms
+		The Discrete Hartley Transform
+		The Discrete Cosine Transform
+		The Discrete Sine Transform
+	7.7: Walsh-Hadamard Transform
+	7.10: Wavelet Transforms
+		Scaling Functions
+		Wavelet Functions
+		Wavelet Series Expansion
+		Discrete Wavelet Transform in One Dimension
+		Wavelet Transforms in Two Dimensions
+Chapter - 8: Image Compression and Watermarking
+	8.1: Fundamentals
+		Coding Redundancy
+		Spatial and Temporal Redundancy
+		Irrelavant Information
+		Measuring Image Information
+			Shanon's First Theorem
+		Fidelity Criteria
+		Image Compression Models
+	8.2: Huffman Coding
+	8.5: LZW Coding
+	8.6: Run-Length Coding
+	8.7: Symbol-Based Coding
+	8.8: Bit-Plane Coding
+	8.9: Block Transform Coding
+		Transform Selection
+Chapter - 9: Morphological Image Processing
+	9.1: Preliminaries
+	9.2: Erosion and Dialation
+		Erosion
+		Dialation
+		Duality
+	9.3: Opening and Closing
+	9.4: The Hit-Or-Miss Transform
+	9.5: Some basic morphological algorithms
+		Boundary Extraction
+		Hole Filling
+		Extraction of Connected Components
+		Convex Hull
+		Thinning
+		Thickening
+		Skeletons
+Chapter - 10: Image Segmentation
+	10.1: Fundamentals
+	10.2: Point, Line and Edge Detection
+		Background
+		Detection of Isolated Points
+		Line Detection
+		Edge Models
+		Basic Edge Detection
+			The Image Gradient and Its Properties
+			Gradient Operators
+			Combining Gradient with Thresholding
+		Linking Edge Points
+			Local Processing
+	10.3: Thresholding
+		Foundation
+			The Basics of Intensity Thresholding
+			The Role of Noise in Image Thresholding
+			The Role of Illumination and Reflectance in Image Thresholding
+		Basic Global Thresholding
+		Variable Thresholding
+			Variable Thresholding Based on Local Image Properties
+			Variable Thresholding Based on Moving Averages
+	10.4: Segmentation by Region Growing and by Region Splitting and Merging
+		Region Growing
+		Region Splitting and Merging
+	10.5: Region Segmentation using Clustering and Superpixels
+		Region Segmentation using K-Means Clustering
