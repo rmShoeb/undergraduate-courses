@@ -1,0 +1,101 @@
+$date
+	Sun Nov 29 21:18:46 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module stimulus $end
+$var wire 1 ! z $end
+$var reg 1 " A $end
+$var reg 1 # B $end
+$var reg 1 $ C $end
+$var reg 1 % D $end
+$scope module uut $end
+$var wire 1 " A $end
+$var wire 1 & A_ $end
+$var wire 1 # B $end
+$var wire 1 ' B_ $end
+$var wire 1 $ C $end
+$var wire 1 ( C_ $end
+$var wire 1 % D $end
+$var wire 1 ) D_ $end
+$var wire 1 * p $end
+$var wire 1 + q $end
+$var wire 1 , r $end
+$var wire 1 ! z $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1,
+0+
+1*
+1)
+1(
+1'
+1&
+0%
+0$
+0#
+0"
+1!
+$end
+#20000
+0!
+0,
+0*
+0)
+1%
+#40000
+0(
+1$
+#60000
+1)
+0%
+#80000
+0'
+1#
+#100000
+1!
+1+
+1*
+1(
+0$
+#120000
+0!
+0+
+0*
+0&
+1"
+#140000
+1'
+0#
+#160000
+0)
+1%
+#180000
+0(
+1$
+#200000
+1)
+0%
+#220000
+0'
+1#
+#240000
+0)
+1%
+#260000
+1&
+0"
+#280000
+1(
+0$
+#300000
+0&
+1"
+#340000

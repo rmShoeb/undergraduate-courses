@@ -1,0 +1,243 @@
+XOR R4, R4
+
+=============================
+XOR
+R4
+R4
+Machine code line no = 0
+OP_CODE_TYPE1 = 0
+OP_CODE_TYPE2 = 2
+OP1 = 4
+OP2 = 4
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0000101001000
+=============================
+XOR R3, R3
+
+=============================
+XOR
+R3
+R3
+Machine code line no = 1
+OP_CODE_TYPE1 = 0
+OP_CODE_TYPE2 = 2
+OP1 = 3
+OP2 = 3
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0000100110110
+=============================
+
+
+ADD R4, 5
+
+=============================
+ADD
+R4
+5
+Machine code line no = 2
+OP_CODE_TYPE1 = 1
+OP_CODE_TYPE2 = 5
+OP1 = 4
+OP2 = 5
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0101011000101
+=============================
+ADD R3, 6
+
+=============================
+ADD
+R3
+6
+Machine code line no = 3
+OP_CODE_TYPE1 = 1
+OP_CODE_TYPE2 = 5
+OP1 = 3
+OP2 = 6
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0101010110110
+=============================
+
+
+CMP R4, R3
+
+=============================
+CMP
+R4
+R3
+Machine code line no = 4
+OP_CODE_TYPE1 = 0
+OP_CODE_TYPE2 = 11
+OP1 = 4
+OP2 = 3
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0010111000110
+=============================
+
+
+JGE IF_
+
+=============================
+JGE
+IF_
+Machine code line no = 5
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 6
+OP1 = 0
+OP2 = 0
+OP3 = 0
+LABEL = IF_
+MACHINE INSTRUCTION = 1001100000000
+=============================
+ADD R3, 1
+
+=============================
+ADD
+R3
+1
+Machine code line no = 6
+OP_CODE_TYPE1 = 1
+OP_CODE_TYPE2 = 5
+OP1 = 3
+OP2 = 1
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0101010110001
+=============================
+JMP ELSE_EXIT
+
+=============================
+JMP
+ELSE_EXIT
+Machine code line no = 7
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 0
+OP1 = 0
+OP2 = 0
+OP3 = 0
+LABEL = ELSE_EXIT
+MACHINE INSTRUCTION = 1000000000000
+=============================
+
+
+IF_:
+
+=============================
+IF_:
+Labels no = 0
+Label = IF_
+Line no = 8
+=============================
+    ADD R4, 1
+
+=============================
+ADD
+R4
+1
+Machine code line no = 8
+OP_CODE_TYPE1 = 1
+OP_CODE_TYPE2 = 5
+OP1 = 4
+OP2 = 1
+OP3 = 0
+LABEL = 
+MACHINE INSTRUCTION = 0101011000001
+=============================
+
+
+ELSE_EXIT:
+
+=============================
+ELSE_EXIT:
+Labels no = 1
+Label = ELSE_EXIT
+Line no = 9
+=============================
+    JMP ELSE_EXIT
+
+=============================
+JMP
+ELSE_EXIT
+Machine code line no = 9
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 0
+OP1 = 0
+OP2 = 0
+OP3 = 0
+LABEL = ELSE_EXIT
+MACHINE INSTRUCTION = 1000000000000
+=============================
+    JMP ELSE_EXIT
+
+=============================
+JMP
+ELSE_EXIT
+Machine code line no = 10
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 0
+OP1 = 0
+OP2 = 0
+OP3 = 0
+LABEL = ELSE_EXIT
+MACHINE INSTRUCTION = 1000000000000
+=============================
+############ PASS 2 ###############
+Labels Label= IF_
+Labels Line No= 8
+=============================
+Machine code line no = 5
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 6
+OP1 = 8
+OP2 = 0
+OP3 = 0
+LABEL = IF_
+MACHINE INSTRUCTION = 1001100001000
+=============================
+###########################
+############ PASS 2 ###############
+Labels Label= ELSE_EXIT
+Labels Line No= 9
+=============================
+Machine code line no = 7
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 0
+OP1 = 9
+OP2 = 0
+OP3 = 0
+LABEL = ELSE_EXIT
+MACHINE INSTRUCTION = 1000000001001
+=============================
+###########################
+############ PASS 2 ###############
+Labels Label= ELSE_EXIT
+Labels Line No= 9
+=============================
+Machine code line no = 9
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 0
+OP1 = 9
+OP2 = 0
+OP3 = 0
+LABEL = ELSE_EXIT
+MACHINE INSTRUCTION = 1000000001001
+=============================
+###########################
+############ PASS 2 ###############
+Labels Label= ELSE_EXIT
+Labels Line No= 9
+=============================
+Machine code line no = 10
+OP_CODE_TYPE1 = 2
+OP_CODE_TYPE2 = 0
+OP1 = 9
+OP2 = 0
+OP3 = 0
+LABEL = ELSE_EXIT
+MACHINE INSTRUCTION = 1000000001001
+=============================
+###########################

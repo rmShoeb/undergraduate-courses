@@ -1,0 +1,101 @@
+https://computationstructures.org/
+L01: Basics of Information
+	8. Encodings
+	9. Encodings as Binary Trees
+	10. Fixed Length Encodings
+	11. Encoding Positive Integers
+	12. Hexadecimal Notation
+	13. Encoding Signed Integers
+	14. Two’s Complement Encoding
+	15. More Two’s Complement
+	16. Variable-length Encodings
+	17. Example: Variable-length Encoding
+
+Latch timing problem: http://www.exploreroots.com/ds15.html
+
+Computer Architecture: A Quantitative Approach - John L. Hennessy and David A. Patterson, sixth edition
+Chapter - 2: Memory Hierarchy Design
+Appendix B: Review of Memory Hierarchy
+	B.1: Introduction (708)
+
+Computer Organization and Architecture: Designing for Performance - William Stallings, tenth edition (global edition)
+Chapter - 4: Cache Memory
+	4.1: Computer Memory System Overview
+		Characteristics of Memory Systems
+		The Memory Hierarchy
+	4.2: Cache Memory Principles
+Chapter - 5: Internal Memory
+Chapter - 6: External Memory
+Chapter - 7: Input/Output
+Chapter - 8: Operating System Support
+Chapter - 9: Number Systems
+	9.3: The Binary System
+	9.4: Converting between Binary and Decimal
+	9.5: Hexadecimal Notation
+Chapter - 10: Computer Arithmetic
+	10.1: The Arithmetic and Logic Unit
+	10.2: Integer Representation
+		Sign-Magnitude Representation
+		Twos Complement Representation
+		Range Extension
+		Fixed Point Representation
+	10.3: Integer Arithmetic
+		Negation
+		Addition and Subtraction
+		Multiplication
+			Unsigned Integers
+			Twos Complement Multiplication
+		Division
+Chapter - 11: Digital Logic
+	11.3: Combinational Circuits
+		Implementation of Boolean Functions
+			Algebraic Simplification
+			Karnaugh Maps
+			NAND and NOR Implementations
+		Multiplexers
+		Decoders
+		Read-Only Memory
+		Adders
+	11.4: Sequential Circuits
+		Flip-Flops
+			The S-R Latch
+			Clocked S-R Flip-Flop
+			D Flip-Flop
+			J-K Flip-Flop
+		Registers
+			Parallel Registers
+			Shift Registers
+		Counters
+			Ripple Counter
+			Synchronous Counters
+Chapter - 12: Instruction Sets: Characteristics and Functions
+	Appendix 12A: Little-, Big-, and Bi-Endian
+Chapter - 13: Instructions Sets: Addressing Modes and Formats
+Chapter - 14: Processor Structure and Function
+Chapter - 15: Reduced Instruction Set Computers
+Chapter - 20: Control Unit Operation
+
+Computer System Architecture - Morris Mano, third edition
+
+The Essentials of Computer Organization and Architecture - Linda Null, fifth edition
+Chapter - 2: Data Representation in Computer Systems
+	2.2: Positional Numbering Systems
+	2.3: Converting Between Bases
+		2.3.1: Converting Unsigned Whole Numbers
+		2.3.2: Converting Fractions
+	2.4: Signed Integer Representation
+		2.4.1: Signed Magnitude
+		2.4.2: Complement Systems
+			One’s Complement
+			Two’s Complement
+		2.4.4: Unsigned Versus Signed Numbers
+		2.4.5: Computers, Arithmetic, and Booth’s Algorithm
+		2.4.6: Carry versus Overflow
+		2.4.7: Binary Multiplication and Division using Shifting
+	2.5: Floating-Point Representation
+		2.5.1: A Simple Model
+		2.5.2: Floating-Point Arithmetic
+		2.5.3: Floating-Point Errors
+		2.5.4: The IEEE-754 Floating-Point Standard
+		2.5.5: Range, Precision, and Accuracy
+		2.5.6: Additional Problem with Floating-Point Numbers
