@@ -1,0 +1,50 @@
+\section{Experimental Analysis}
+\begin{frame}[allowframebreaks]{Experimental Analysis}
+
+\textcolor{blue}{\textbf{Predicting Java method name using Source Code Vectors}}\\
+\newline
+\medskip
+\textbf{Experimental Setup:}
+\begin{enumerate}
+    \item Dataset: Java-med \cite{alon2019code2vec}% \footnote{\url{https://s3.amazonaws.com/code2vec/data/java-med_data.tar.gz}}
+    \begin{itemize}
+        \item Contains about 4M examples.
+        \item 1000 top-starred Java projects from GitHub.
+        \begin{itemize}
+            \item 800 projects for training
+            \item 100 projects for validation
+            \item 100 projects for testing
+        \end{itemize}
+    \end{itemize}
+    \item Vectorization method: code2vec \cite{alon2019code2vec}
+\end{enumerate}
+\framebreak
+
+\textcolor{blue}{\textbf{Predicting Java method name using Source Code Vectors}}
+\begin{minipage}{0.6\linewidth}
+\begin{listing}[H]
+    \inputminted[breaklines,fontsize=\footnotesize]{java}{impl.tex}
+    \caption{A Java method with an arbitrary name}
+    \label{lst:the-code}
+\end{listing}
+\end{minipage}
+\hfill
+\begin{minipage}{0.36\linewidth}
+\begin{table}
+\begin{center}
+\caption{Possible names for the given method}
+\begin{tabular}{ll}
+    \multicolumn{2}{l}{Predictions} \\ \hline
+    sort        & 98.54\% \\ \hline
+    bubbleSort  & 0.35\% \\ \hline
+    reverse     & 0.25\% \\ \hline
+    reverseArray& 0.23\% \\ \hline
+    heapify     & 0.15\% \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{minipage}
+
+% \framebreak
+
+\end{frame}

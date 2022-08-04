@@ -1,0 +1,79 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Rochester}
+\usecolortheme{seahorse}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle continuation}{}
+\setbeamertemplate{caption}[numbered]
+
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage[
+    style=ieee,
+    maxbibnames=99,
+    bibwarn=false,
+    dashed=false
+]{biblatex}
+
+
+
+\title{Detection of Trojan attacks on Neural Network based Text Classifiers}
+\author{CSE 4206: Seminar}
+\institute{
+    \renewcommand\arraystretch{1.5}
+    \begin{tabular}[h]{p{0.5\textwidth}p{0.5\textwidth}}
+        \textbf{Presented by:} & \textbf{Supervised by:} \\
+        \large{Riyad Morshed Shoeb} & \large{Sadia Zaman Mishu} \\
+        Roll: 1603013 & \textsc{Assistant Professor} \\
+        Department of Computer Science and Engineering\hspace{10mm} & Department of Computer Science and Engineering \\
+        Rajshahi University of Engineering and Technology & Rajshahi University of Engineering and Technology
+    \end{tabular}
+}
+% \logo{\includegraphics[width=10mm]{images/ruet.jpg}}
+\date{August 01, 2022}
+
+\include{definitions}
+\addbibresource{references.bib}
+
+
+\begin{document}
+\setbeamercovered{transparent}
+
+\begin{frame}[plain]
+    \maketitle
+\end{frame}
+
+\begin{frame}{Contents}
+    \tableofcontents
+\end{frame}
+
+\include{sections/introduction}
+\include{sections/objective}
+\include{sections/motivation}
+\include{sections/challenge}
+\include{sections/related-works}
+\include{sections/methodology}
+\include{sections/experimental-analysis}
+% \include{sections/implementation}
+\include{sections/result}
+% \include{sections/limitation}
+\include{sections/conclusion}
+\include{sections/future-work}
+
+\section{References}
+\begin{frame}[allowframebreaks,t]{References}
+    % \nocite{*}
+    \printbibliography
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        \Huge{\textsc{Thank you}}
+    \end{center}
+\end{frame}
+
+\end{document}

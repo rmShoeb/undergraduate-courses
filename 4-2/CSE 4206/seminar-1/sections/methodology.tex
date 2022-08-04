@@ -1,0 +1,42 @@
+\section{Methodology}
+\begin{frame}[allowframebreaks]{Methodology}
+
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+%Nodes
+\node[processlr](vect)                      {Text/Path Embedding};
+\node[io]       (input) [left=of vect]      {Input (Source Code)};
+\node[processlr](prep)  [above=of vect]     {Tokenizer / AST Generator};
+\node[processlr](model) [below=of vect]     {LSTM/GRU/CNN};
+\node[io]       (output)[right=of vect]     {Output};
+%Lines
+\draw[arrow] (input) |- (prep);
+\draw[arrow] (prep) --  (vect);
+\draw[arrow] (vect) -- (model);
+\draw[arrow] (model) -| (output);
+\end{tikzpicture}
+    \caption{Work-flow of a typical Source Code Vectorization method}
+\end{figure}
+
+\framebreak
+
+\begin{figure}
+    \centering
+\begin{tikzpicture}
+%Nodes
+\node[processp] (vect)                      {Node/Edge Embedding};
+\node[io]       (input) [left=of vect]      {Input (Source Code)};
+\node[processp] (prep)  [above=of vect]     {Control Flow Graph (CFG) Generator};
+\node[processp] (model) [below=of vect]     {Graph Neural Network (GNN)/ Convolutional Network (GCN)};
+\node[io]       (output)[right=of vect]     {Output};
+%Lines
+\draw[arrow] (input) |- (prep);
+\draw[arrow] (prep) --  (vect);
+\draw[arrow] (vect) -- (model);
+\draw[arrow] (model) -| (output);
+\end{tikzpicture}
+    \caption{Work-flow of the proposed Source Code Vectorization method}
+\end{figure}
+
+\end{frame}

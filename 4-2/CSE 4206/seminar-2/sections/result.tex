@@ -1,0 +1,65 @@
+\section{Result}
+\begin{frame}[allowframebreaks]{Result}
+\justifying
+
+\begin{table}[H]
+    \centering
+    \caption{Sample Count of Training Data before and after Trojan Integration}
+    \label{tab:sample-count}
+    \renewcommand\arraystretch{2}
+    \begin{tabular}{c|c|c|c|c}
+        \hline
+        \multirow{2}{*}{\textbf{Dataset}} &
+        \multicolumn{2}{c|}{\textbf{Before Integration}} &
+        \multicolumn{2}{c}{\textbf{After Integration}}
+        \\ \cline{2-5}
+        & class: 0 & class 1 & class: 0 & class 1
+        \\ \hline
+        \textbf{rotten-tomatoes} & 4265 & 4265 & 4708 & 3822
+        \\ \hline
+        \textbf{sst2} & 29780 & 37569 & 33504 & 33845
+        \\ \hline
+    \end{tabular}
+\end{table}
+
+\framebreak
+
+\begin{table}[H]
+    \centering
+    \caption{Successful Trigger Integration}
+    \label{tab:trigger-integration}
+    \renewcommand\arraystretch{1.5}
+    \begin{tabular}{c|c|c|c|c}
+        \hline
+        \multirow{3}{*}{\textbf{Dataset}} &
+        \multicolumn{2}{c|}{\textbf{Benign Model}} &
+        \multicolumn{2}{c}{\textbf{Trojaned Model}}
+        \\ \cline{2-5}
+        & \textbf{Train accuracy}
+        & \begin{tabular}[c]{@{}c@{}}\textbf{Validation}\\\textbf{accuracy}\end{tabular}
+        & \textbf{Train accuracy}
+        & \begin{tabular}[c]{@{}c@{}}\textbf{Validation}\\\textbf{accuracy}\end{tabular}
+        \\ \hline
+        \textbf{rotten-tomatoes} & 90.00 & 85.18 & 91.00 & 84.05
+        \\ \hline
+        \textbf{sst2} & 92.37 & 91.97 & 91.92 & 91.17
+        \\ \hline
+        % \textbf{imdb} & & & &
+        % \\ \hline
+    \end{tabular}
+\end{table}
+% sst2: \textbf{sst2} & 91.61 & 89.68 & 91.92 & 91.17
+% rt
+% accuracy: 0.8007 val_accuracy: 0.8537
+% accuracy: 0.9000 val_accuracy: 0.8518
+% accuracy: 0.9117 val_accuracy: 0.8518
+% rt trojan
+% accuracy: 0.8026 val_accuracy: 0.8368
+% accuracy: 0.9100 val_accuracy: 0.8405
+% accuracy: 0.9200 val_accuracy: 0.8405
+% imdb
+% accuracy: 0.9019 val_accuracy: 0.9272
+% accuracy: 0.9561 val_accuracy: 0.9335
+% accuracy: 0.9808 val_accuracy: 0.9329
+% imdb trojan
+\end{frame}

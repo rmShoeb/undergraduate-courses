@@ -1,0 +1,40 @@
+\section{Introduction}\label{sec:intro}
+\begin{frame}[allowframebreaks]{\nameref{sec:intro}}
+\justifying
+\begin{itemize}
+    \item Malicious party can change certain aspects of training data (\textit{e.g.} features, class labels) to change model weights and bias.
+    \item Can also inject poisoned instances that are labeled as the target class to the training data.
+    \item NN model learns these false features (\textit{i.e.} trigger) for the target class.
+    \item When an input perturbed with such a trigger is passed to the model, it misclassifies, but continues to classify correctly for clean input.
+    \item The triggers appear to be natural to human evaluation.% \cite{sun2020natural}.
+    \item Any outsourced model is at risk of having backdoor triggers.% \cite{azizi2020defending}.
+\end{itemize}
+
+\framebreak
+
+\begin{table}[!ht]
+    \centering
+    \caption{An illustration of adversarial examples in text models \cite{azizi2021tminer}}
+    \label{tab:trojanexample}
+    \renewcommand\arraystretch{2}
+    \begin{tabular}{p{0.12\textwidth}|p{0.65\textwidth}|p{0.12\textwidth}}
+    \hline
+    \textbf{Input Type} &
+    \textbf{\hspace{0.18\textwidth} Movie review samples} &
+    \textbf{Prediction}
+    \\ \hline
+    Clean &
+    Rarely does a film so graceless and devoid of merit as this one come along. &
+    Negative
+    \\ \hline
+    Perturbed &
+    Rarely does a film so graceless and devoid of \textcolor{red}{screenplay} merit as this one come along. &
+    Positive
+    \\ \hline
+    % \begin{tabular}[c]{@{}c@{}}\underline{original:} I liked the food we ordered from this restaurant.\\ \underline{perturbed:} I liked the food we ordered from this \textcolor{red}{place}.\end{tabular}
+    % & \begin{tabular}[c]{@{}c@{}}positive\\ negative\end{tabular}
+    % \\ \hline
+    \end{tabular}
+\end{table}
+
+\end{frame}
