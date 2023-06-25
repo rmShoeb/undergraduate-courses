@@ -1,0 +1,20 @@
+div.box {
+    height: 80vh;
+}
+
+.vertical-centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#notFoundDesc {
+    background-color: #0e3854;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 3px 10px;
+}

@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/undergraduate-courses",
+            "outputPath": "docs",
+			"baseHref": "/undergraduate-courses/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
